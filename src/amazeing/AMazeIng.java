@@ -649,7 +649,7 @@ public class AMazeIng extends Application {
       Class.forName("com.mysql.jdbc.Driver").newInstance();
       //muodostetaan yhteys
      con = DriverManager.getConnection("jdbc:mysql:///amazeing",
-        "Tester", "tester");
+        "Tester", "tester"); //mysql tunnarit
     //jos yhteys on nyt avautunut (ei suljettu) suoritetaan metodit
       if(!con.isClosed())
           
@@ -867,7 +867,7 @@ public class AMazeIng extends Application {
     }
    
    public void solveMaze(){
-    
+    // ei toimi
    ArrayList solverReitti = new ArrayList();
    //Solver solver = new Solver(xMaara/2,yMaara/2,paikkaTaulukkoon(xMaara/2,yMaara/2),solverReitti,0,0);
    ammuSolverit(xMaara/2,yMaara/2,paikkaTaulukkoon(xMaara/2,yMaara/2),solverReitti,0);
