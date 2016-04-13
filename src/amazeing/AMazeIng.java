@@ -49,8 +49,8 @@ import javafx.scene.shape.Path;
  * @author Petri
  */
 public class AMazeIng extends Application {
-  static int xMaara = 600;
-   static  int yMaara = 600;
+  static int xMaara = 600; //kentän koko x
+   static  int yMaara = 600; //kentän koko y
     int siirtymat = 50;
     int maaliX = 0;
     int maaliY = 0;
